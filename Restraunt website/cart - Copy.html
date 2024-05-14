@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style2.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("vuWLRD0vMRPxc3Tuv");
+   })();
+</script>
+    <style>
+        
+        /* Add your cart.html specific styles here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+.cart-items {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 2500px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.cart-item img {
+    max-width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.cart-item h4 {
+    margin: 0;
+    font-size: 23px;
+}
+
+.cart-item p {
+    margin: 0;
+    color: #777;
+    font-size: 17px;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body class="cart-page">
+        <h1>Cart</h1>
+    <section class="cart-items">
+        <!-- Cart items will be displayed here -->
+    </section>
+    
+    <p style="font-size: 22px; text-align:center;">Total Price: <span id="total-price">$0.00</span></p>
+  
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize the cart
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Function to update the cart display and calculate total price
+            function updateCartDisplay() {
+                const cartItemsContainer = document.querySelector('.cart-items');
+                cartItemsContainer.innerHTML = '';
+
+                let totalPrice = 0; // Initialize the total price
+
+                cart.forEach((product, index) => {
+                    const cartItem = document.createElement('div');
+                    cartItem.classList.add('cart-item');
+
+                    cartItem.innerHTML = `
+                        <img src="${product.image}" alt="${product.name}">
+                        <div>
+                            <h4>${product.name}</h4>
+                            <p>${product.price}</p>
+                            <p>Quantity: ${product.quantity}</p>
+                            
+                            <button class="remove-button" data-index="${index}">Remove</button>
+                        </div>
+                    `;
+
+                    // Calculate the price for the current item
+                    const itemPrice = parseFloat(product.price) * product.quantity;
+                    totalPrice += itemPrice;
+
+                    // Add an event listener to the "Remove" button
+                    const removeButton = cartItem.querySelector('.remove-button');
+                    removeButton.addEventListener('click', function() {
+                        // Remove the item from the cart and update local storage
+                        cart.splice(index, 1);
+                        localStorage.setItem('cart', JSON.stringify(cart));
+
+                        // Update the cart display and total price
+                        updateCartDisplay();
+                    });
+
+                    cartItemsContainer.appendChild(cartItem);
+                });
+
+                // Update the total price display
+                const totalPriceSpan = document.getElementById('total-price');
+                totalPriceSpan.textContent = `INR.${totalPrice.toFixed(2)}`;
+                
+            }
+          
+            // Update the cart display and calculate total price
+            updateCartDisplay();
+        });
+    </script>
+   
+  
+ 
+
+</body>
+</html>

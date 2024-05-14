@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+ 
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:white;
+            background: url(home.jpg)no-repeat;
+            background-size: cover;
+        }
+        .box{padding:55px;
+            width:1050px;
+            float:right;
+        }
+        .box ul li{
+            width: 120px;
+            float:left;
+            margin: 7px,auto;
+            text-align:centre;
+        }
+        .box ul li a{
+            text-decoration:none;
+            color:darkgray;
+            font-family: cursive;
+            font-size: 26px;
+        }
+        .box ul li:hover{background-color: white;}
+        .box ul li a:hover{color:black;}
+
+        .wd{
+            width:160px;
+            height:700px;
+            background-color: black;
+            padding:55px;
+            font-family:cursive;
+        }
+        .wd h2{
+            text-align:centre;
+            text-transform: uppercase;
+            font-weight: normal;
+            margin:40px auto;
+        }
+        .opt form, input[type="button"]{
+            background-color: black;
+            color:white;
+            padding:10px;
+            margin:-14px auto;
+            padding-left:24px;
+            padding-right:50px;
+            text-align:center;
+        }
+        form,input[type="button"]:hover{background-color: white; color:black;}
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Login / Sign in </a></li>
+            <li><a href="">Online order</a></li>
+        </ul>
+    </div>
+    
+    <div class="wd">
+        <h1>Welcome!!</h1>
+        <h2 style="font-size: 20px; font-family: italic; color:dimgray">-Life is short,make it tasty</h2>
+        <h2>Reservation</h2>
+        <div class="opt">
+        <form action="" method="post">
+        <input type="button" value="Start Now">
+        </form>
+        </div>
+    </div>
+</body>
+</html>

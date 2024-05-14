@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment Options</title>
+	<link rel="stylesheet" type="text/css" href="payment.css">
+	<link rel="stylesheet" href="cart.js">
+</head>
+<body>
+	<header>
+		<h1>Payment Options</h1>
+	</header>
+	<main>
+		<section>
+			<h2>Google Pay</h2>
+			<img src="gpay.jpg" alt="Google Pay Logo">
+			<p>Scan the QR code or enter the UPI ID to make payment:</p>
+            <span class="qr">
+			<img src="QR.jpeg" alt="Google Pay QR Code">
+        </span>
+			<p>UPI ID: <strong><input type="text"></strong></p>
+		</section>
+		<section>
+			<h2>Amazon Pay</h2>
+			<img src="amzpay.jpg" alt="Amazon Pay Logo">
+			<p>Log in to your Amazon account to complete payment:</p>
+			<button class="amazon-pay-btn"><a href="done.html">Login with Amazon Pay</a></button>
+		</section>
+		<section>
+			<h2>PhonePe</h2>
+			<img src="phonepay.jpg" alt="PhonePe Logo">
+			<p>Scan the QR code or enter the UPI ID to make payment:</p>
+            <span class="qr">
+			<img src="QR.jpeg" alt="PhonePe QR Code">
+        </span>
+			<p>UPI ID: <strong><input type="text"></strong></p>
+		</section>
+
+		<section>
+			<h2>Cash on Delivery</h2>
+			<img src="cod.jpg" alt="Cash on Delivery Logo">
+			<p>Pay with cash on delivery when your order arrives:</p>
+			<button class="cod-btn"><a href="done.html">Cash on Delevery</a></button>
+		</section>
+		<section>
+			<h2>Credit Card</h2>
+			<img src="credit.jpg" alt="Credit Card Logo">
+			<form>
+				<label for="cc-number">Card Number:</label>
+				<input type="text" id="cc-number" name="cc-number" required>
+				<br>
+				<label for="cc-expiry">Expiry Date:</label>
+				<input type="text" id="cc-expiry" name="cc-expiry" required>
+				<br>
+				<label for="cc-cvv">CVV:</label>
+				<input type="text" id="cc-cvv" name="cc-cvv" required>
+				<br>
+				<label for="discount-code">Discount Code:</label>
+				<input type="text" id="discount-code" name="discount-code">
+				<br>
+				<button class="cc-pay-btn"><a href="done.html">Pay with Credit card</a></button>
+			</form>
+		</section>
+		<section>
+			<h2>Debit Card</h2>
+			<img src="debitcard.jpg" alt="Debit Card Logo">
+			<form>
+				<label for="dc-number">Card
+                    Number:</label>
+                    <input type="text" id="dc-number" name="dc-number" required>
+                    <br>
+                    <label for="dc-expiry">Expiry Date:</label>
+                    <input type="text" id="dc-expiry" name="dc-expiry" required>
+                    <br>
+                    <label for="dc-cvv">CVV:</label>
+                    <input type="text" id="dc-cvv" name="dc-cvv" required>
+                    <br>
+                    <label for="discount-code">Discount Code:</label>
+                    <input type="text" id="discount-code" name="discount-code">
+                    <br>
+                    <button class="dc-pay-btn"><a href="done.html">Pay with Debit card</a></button>
+                    </form>
+                    </section>
+                    </main>
+                    </body>
+                    </html>
+					  

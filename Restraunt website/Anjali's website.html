@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Restaurant website</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <link rel="stylesheet" href="style2.css">
+     <script src="cart.js"></script>
+     <script type="text/javascript"
+     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+   emailjs.init("vuWLRD0vMRPxc3Tuv");
+})();
+</script>
+</head>
+<body>
+<header>
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+<a href="#" class="logo">Fork & Spoon <span>.</span></a>
+<nav class="navbar">
+    <a class="nav-link scrollto active" href="#home">Home</a>
+    <a class="nav-link scrollto active" href="#about">About</a>
+    <a class="nav-link scrollto active" href="#products">Dishes</a>
+    <a class="nav-link scrollto active" href="#review">Reviews</a>
+    <a class="nav-link scrollto active" href="#contact">Contact</a>
+    <a href="index.html">Payment</a>
+    <a href="login.html">Login/Signin</a>
+</nav>
+<div class="icons">
+    <a href="cart.html"class="fas fa-shopping-cart"></a>
+    <a href="'#"class="fas fa-user"></a>
+</div>
+
+</header>
+
+<section class="home" id="home"?>
+    <div class="content">
+        <h3>Fork & Spoon Restaurant</h3>
+        <span>Amazing Mesmerizing Taste!</span>
+        <p>
+
+        </p>
+        <a href="#" class="btn">Order Now </a>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h3 class="heading"> <span> About </span> us </h3>
+    <div class="row">
+        <div class="video container">
+        <img src="giphy.gif">
+        <h3>best services to customer</h3>
+         </div>
+
+        
+            <div class="content">
+                <h3> Why Choose us?</h3>
+            
+                <p>Well ofcourse there's no such thing as a perfect Restaurant that everyone would agree on.Begining from our decor,lighting,affordable prices,service and last but not the least amazing taste would no longer let you to search for another restaurant,So without making any delay order now! </p>
+               <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+
+       
+</section>
+<section class="icons-container">
+    <div class="icons">
+        <img src="freedel.jpeg" alt="">
+        <div class="info">
+            <h3>free delievery</h3>
+            <span>On all orders</span>
+        </div>
+    </div>
+    <div class="icons">
+        <img src="reurn.jpeg">
+        <div class="info">
+            <h3>Coupon Benefits</h3>
+            <span>Get coupon on order above 1500</span>
+        </div>
+    </div>
+    <div class="icons">
+        <img src="pay.jpeg" alt="">
+        <div class="info">
+            <h3>secure payment</h3>
+            <span>protected by paypal </span>
+        </div>
+    </div>
+    
+</section>
+
+
+
+<section class="products" id="products">
+    <h1 class="heading"> Popular<span> Dishes </span></h1>
+    <div class="box-container">
+        
+        <div class="box">
+            <!-- <span class="discount">-15%</span> -->
+            <div class="image">
+                <img src="idli.jpeg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">Idli</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <button class="add-to-cart" data-name="Idli " data-price="99" data-image="idli.jpeg"style="font-size: 20px; color: black;margin:20px;">Add to Cart</button>
+            <div class="content">
+                <div class="price">INR.99</div>
+    
+            </div>
+        </div>
+
+    
+
+        <div class="box">
+            <!-- <span class="discount">-15%</span> -->
+            <div class="image">
+                <img src="paneer.jpeg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">Paneer</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <button class="add-to-cart" data-name="Paneer " data-price="100" data-image="paneer.jpeg" style="font-size: 20px; color: black;margin:20px;">Add to Cart</button>
+            <div class="content">
+                <div class="price">INR.100</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <!-- <span class="discount">-26%</span> -->
+            <div class="image">
+                <img src="momos.jpeg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">Momos</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <button class="add-to-cart" data-name="Momos " data-price="100" data-image="momos.jpeg" style="font-size: 20px; color: black;margin:20px;">Add to Cart</button>
+            <div class="content">
+                <div class="price">INR.100</div>
+    
+            </div>
+        </div>
+
+        <div class="box">
+            <!-- <span class="discount">-17%</span> -->
+            <div class="image">
+                <img src="pizza.jpeg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">Pizza</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <button class="add-to-cart" data-name="Pizza " data-price="200" data-image="pizza.jpeg" style="font-size: 20px; color: black;margin:20px;">Add to Cart</button>
+            <div class="content">
+                <div class="price">INR.200</div>
+    
+            </div>
+        </div>
+
+        <div class="box">
+            <!-- <span class="discount">-33%</span> -->
+            <div class="image">
+                <img src="sandwich.jpeg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">Sandwich</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <button class="add-to-cart" data-name="sandwich " data-price="150" data-image="sandwich.jpeg" style="font-size: 20px; color: black;margin:20px;">Add to Cart</button>
+            <div class="content">
+                <div class="price">INR.150</div>
+    
+            </div>
+        </div>
+
+        <div class="box">
+            <!-- <span class="discount">-15%</span> -->
+            <div class="image">
+                <img src="chole puri.jpeg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">Chole puri</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <button class="add-to-cart" data-name="Cholepuri " data-price="99" data-image="chole puri.jpeg" style="font-size: 20px; color: black;margin:20px;">Add to Cart</button>
+            <div class="content">
+                <div class="price">INR.99</div>
+    
+            </div>
+        </div>
+
+        <div class="box">
+            <!-- <span class="discount">-23%</span> -->
+            <div class="image">
+                <img src="soup.jpeg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">Soup</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <button class="add-to-cart" data-name="Soup " data-price="120" data-image="soup.jpeg" style="font-size: 20px; color: black;margin:20px;">Add to Cart</button>
+            <div class="content">
+                <div class="price">INR.120</div>
+    
+            </div>
+        </div>
+
+        <div class="box">
+            <!-- <span class="discount">-7%</span> -->
+            <div class="image">
+                <img src="comida.jpeg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">Comida</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <button class="add-to-cart" data-name="Comida" data-price="250" data-image="comida.jpeg" style="font-size: 20px; color: black;margin:20px;">Add to Cart</button>
+            <div class="content">
+                <div class="price">INR.250</div>
+    
+            </div>
+        </div>
+
+        <div class="box">
+            <!-- <span class="discount">-9%</span> -->
+            <div class="image">
+                <img src="burger.jpeg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">Burger</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <button class="add-to-cart" data-name="Burger " data-price="99" data-image="burger.jpeg" style="font-size: 20px; color: black; margin:20px;">Add to Cart</button>
+            <div class="content">
+                <div class="price">INR.99</div>
+    
+            </div>
+        </div>
+
+        <div class="box">
+            <!-- <span class="discount">-18%</span> -->
+            <div class="image">
+                <img src="cheese.jpeg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">Cheese</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <button class="add-to-cart" data-name="Cheese " data-price="59" data-image="cheese.jpeg" style="font-size: 20px; color: black;margin:20px;">Add to Cart</button>
+            <div class="content">
+                <div class="price">INR.59</div>
+    
+            </div>
+        </div>
+
+        <div class="box">
+            <!-- <span class="discount">-18%</span> -->
+            <div class="image">
+                <img src="shake.jpeg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">Shake</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <button class="add-to-cart" data-name="Shake " data-price="180" data-image="shake.jpeg"style="font-size: 20px;color: black;margin:20px;">Add to Cart</button>
+            <div class="content">
+                <div class="price">INR.180</div>
+    
+            </div>
+        </div>
+
+        <div class="box">
+            <!-- <span class="discount">-20%</span> -->
+            <div class="image">
+                <img src="spagettti.jpeg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">Spagettti</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <button class="add-to-cart" data-name="spagettti" data-price="300" data-image="spagettti.jpeg" style="font-size: 20px; color: black;margin:20px;    ">Add to Cart</button>
+            <div class="content">
+                <div class="price">INR.300</div>
+    
+            </div>
+        </div>
+    </div>
+</section>
+<section class="review" id="review">
+    <h1 class="heading">Customer's <span>Review</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>The Dish was superexciting and taste was also too good. Really satisfied with the services.</p>
+            <div class="user">
+                <img src="cus.jpeg" alt="">
+                <div class="user-info">
+                    <h3>John Nasit</h3>
+                    <span>happy customer</span>
+                </div>
+
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>I suggest must visit restaurant, all the  quantity is too good and quality was superb</p>
+            <div class="user">
+                <img src="wom.jpeg" alt="">
+                <div class="user-info">
+                    <h3>Rashi Sanghvi</h3>
+                    <span>happy customer</span>
+                </div>
+
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+    </div>
+
+
+   
+</section>
+<section class="contact" id="contact">
+    <h1 class="heading"> <span> contact </span> us </h1>
+    <div class="row">
+        <form onsubmit="sendEmail(); return false ;">
+            <input id="name" type="text" placeholder="name" class="box">
+            <input id="email" type="email" placeholder="email" class="box">
+            <input id="number" type="number" placeholder="number" class="box">
+            <textarea id="message" name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="btn">
+        </form>
+        <div class="image">
+            <img src="con.jpeg" alt="">
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">my account</a>
+            <a href="#">my account</a>
+            <a href="#">favorite</a>
+        </div>
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">India</a>
+            <a href="#">USA</a>
+            <a href="#">Japan</a>
+            <a href="#">France</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info </h3>
+            <a href="#">+91 9428670067</a>
+            <a href="#">timecorner2010@gmail.com</a>
+            <a href="#">gujrat, india-361001</a>
+            <img src="" alt="">
+        </div>
+
+    </div>
+    <div class="credit"> created by <span> Group6</span> | all right reserved </div>
+</section>       
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+    // Initialize the cart
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // Function to update the cart and save it to local storage
+    function updateCart() {
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }
+
+    // Function to handle adding a product to the cart
+    function addToCart(product) {
+        const existingProduct = cart.find(item => item.name === product.name);
+
+        if (existingProduct) {
+            alert('Product is already added. Increase quantity in the cart.');
+            existingProduct.quantity = (existingProduct.quantity || 1) + 1;
+        } else {
+            cart.push(product);
+            updateCart();
+            alert('Product added to cart!');
+        }
+
+        updateCartDisplay();
+    }
+
+    // Function to update the cart display
+      function updateCartDisplay() {
+        const cartItemsContainer = document.querySelector('.cart-items');
+        cartItemsContainer.innerHTML = '';
+
+        cart.forEach(product => {
+            const cartItem = document.createElement('div');
+            cartItem.classList.add('cart-item');
+
+            cartItem.innerHTML = `
+                <img src="${product.image}" alt="${product.name}">
+                <div>
+                    <h4>${product.name}</h4>
+                    <p>${product.price}</p>
+                    <p>Quantity: ${product.quantity}</p>
+                </div>
+            `;
+
+            cartItemsContainer.appendChild(cartItem);
+        });
+    }
+
+    // Check if the current page is the cart page (you can add a specific class or ID to your cart page's body element for identification)
+    const isCartPage = document.body.classList.contains('cart-page');
+
+    // If it's the cart page, update the cart display
+    if (isCartPage) {
+        updateCartDisplay();
+    }
+
+    // Find all the "Add to Cart" buttons
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+    addToCartButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            const productName = this.dataset.name;
+            const productPrice = this.dataset.price;
+            const productImage = this.dataset.image;
+
+            const product = {
+                name: productName,
+                price: productPrice,
+                image: productImage,
+                quantity: 1, // Initial quantity
+            };
+
+            addToCart(product);
+        });
+    });
+
+    // Initialize and update the cart display
+    updateCartDisplay();
+});
+
+  </script>
+
+<script>
+    function sendEmail() {
+        var templateParams = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            num: document.getElementById("number").value,
+            message: document.getElementById("message").value
+        };
+
+        emailjs.send('service_h2c615q', 'template_8rzynhl', templateParams)
+            .then(function(response) {
+                alert('Email sent successfully!');
+            }, function(error) {
+                alert('Error sending email: ' + error);
+            });
+    }
+</script>
+</body>
+</html>
